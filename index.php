@@ -5,7 +5,7 @@
     <title>Aš Valdau HTML!</title>
   </head>
   <body>
-    <h1>Justas - HTML asas!</h1>
+    <h1><b>Justas</b> - HTML asas!</h1>
     <p>Moku kurti statinį turinį.</p>
   </body>
 </html>
