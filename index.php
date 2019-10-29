@@ -1,12 +1,11 @@
  <html lang="en" dir="ltr">
    <head>
-     <title>Aš valdau HTML <?php print 'ir PHP!'; ?></title>
+     <title>Aš,<?php print date('l'); ?> ir PHP</title>
    </head>
    <body>
-       <h1><b>Justas</b> - HTML <?php print 'ir PHP'; ?> asas!</h1>
+       <h1><b>Justas</b> - HTML <?php print 'ir PHP'; ?> asas jau nuo <?php print date('o'); ?></h1>
        <p>
-           Kuriu dinaminį turinį.<br>
-           Atidaryta: <?php print date('Y-m-d H:i:s'); ?>
+           Viskas prasidėjo <?php print date('F'); ?> mėnesio <?php print date('d'); ?> dieną
        </p>
    </body>
  </html> 
