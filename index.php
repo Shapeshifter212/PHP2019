@@ -1,13 +1,13 @@
-<html lang="en" dir="ltr">
-    <head>
-        <title><?php print 'PHP lydės ir ' . date('Y-m-d', strtotime('+1 day')); ?></title>
-    </head>
+<html>
+    <title>Komentarai</title>
     <body>
         <h1>
-            <b>Justas</b> - HTML <?php print 'PHP su manim buvo ' . date('h:i:s', strtotime('-1 hour')); ?>
+            Dainų tekstai
         </h1>
-        <p> 
-            <?php print date('y-m-d', strtotime('+1 year')) . ' ne už kalnų!'; ?> 
-        </p>
+        <h2>
+            Paragrafo Daina
+        </h2>
+        <p>Aš toks jaunas paragrafas....</p>
+        <p>Mindau svetimo....</p>
     </body>
-</html> 
+</html>
