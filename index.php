@@ -8,6 +8,8 @@
             Paragrafo Daina
         </h2>
         <p>Aš toks jaunas paragrafas....</p>
+        <!--
         <p>Mindau svetimo....</p>
-    </body>
+    -->
+        </body>
 </html>
