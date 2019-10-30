@@ -1,21 +1,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>9b užduotis</title>
+        <title>X užduotis</title>
         <style>
-            .imag-1 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2c/Alea_1.png);}
-            .imag-2 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b8/Alea_2.png);}  
-            .imag-3 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2f/Alea_3.png);}  
-            .imag-4 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Alea_4.png);}  
-            .imag-5 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/55/Alea_5.png);}  
-            .imag-6 {background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f4/Alea_6.png);}  
-            .kaulas {
-                height: 112px;
-                width:  112px;
+            .bomb {
+                background-image: url(https://images-na.ssl-images-amazon.com/images/I/61V2cX4JqGL.png);
+                background-size: cover;
+                height: <?php print date('s'); ?>px;
+                width: <?php print date('s'); ?>px;
             }
         </style>
     </head>
     <body>
-        <div class="kaulas imag-<?php print rand(1, 6); ?>"></div>
+        <div class="bomb"></div>
+        <div><?php print date('s'); ?></div> 
     </body>
 </html>
