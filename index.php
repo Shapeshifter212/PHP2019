@@ -16,8 +16,6 @@
         </style>
     </head>
     <body>
-        <div class="kaulas <?php print 'imag-' . rand(1, 6); ?>">
-
-        </div>
+        <div class="kaulas imag-<?php print rand(1, 6); ?>"></div>
     </body>
 </html>
