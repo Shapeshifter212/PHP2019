@@ -10,6 +10,7 @@ $h1 = 'Keliones skaiciuokle';
 $li_1 = "Nuvaziuota distancija: $distance";
 $li_2 = "Sunaudota $fuel_total l. kuro.";
 $li_3 = "Kaina: $price_trip pinigu";
+$li_4 = "Turimi pinigai: $my_money";
 $iperkama = 'Isvada: Kelione iperkama';
 $neiperkama = 'Isvada: Kelione neiperkama';
 ?>
@@ -24,6 +25,7 @@ $neiperkama = 'Isvada: Kelione neiperkama';
             <li><?php echo $li_1; ?></li>
             <li><?php echo $li_2; ?></li>
             <li><?php echo $li_3; ?></li>
+            <li><?php echo $li_4; ?></li>
         </ul>
         <hr>
         <p><?php
