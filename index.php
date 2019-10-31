@@ -11,7 +11,7 @@ $li_1 = "Nuvaziuota distancija: $distance";
 $li_2 = "Sunaudota $fuel_total l. kuro.";
 $li_3 = "Kaina: $price_trip pinigu";
 $iperkama = 'Isvada: Kelione iperkama';
-$neiperkama = "Isvada: Kelione neiperkama';"
+$neiperkama = 'Isvada: Kelione neiperkama';'
 ?>
 <html lang="en" dir="ltr">
     <head>
@@ -27,7 +27,7 @@ $neiperkama = "Isvada: Kelione neiperkama';"
         </ul>
         <hr>
         <p><?php
-if ($my_money > $price_trip) {
+if ($my_money >= $price_trip) {
     print $iperkama;
 } else {
     print $neiperkama;
