@@ -1,30 +1,39 @@
 <?php
-$grizai_velai = rand(0, 1);
-$grizai_isgeres = rand(0, 1);
-$miegosi = 'nemiegosi';
-$img = 'https://pics.me.me/www-wiocha-pl-0-07-2004-happy-wife-happy-life-31594936.png';
-
-if ($grizai_velai && !$grizai_isgeres) {
-    $situacija = 'Grizai velai';
-} else if (!$grizai_velai && $grizai_isgeres) {
-    $situacija = 'Grizai isgeres';
-} else if ($grizai_velai && $grizai_isgeres) {
-    $situacija = 'Grizai velai ir isgeres';
-    $miegosi = 'miegosi';
-    $img = 'http://4.bp.blogspot.com/_un923qgN4h8/SnpnEzu0WLI/AAAAAAAAAXs/RctcWJGicjk/s400/angry-wife-funny5.jpg';
+$sunny = rand(0, 1);
+​
+if ($sunny) {
+    $h1 = 'Sauleta';
+    $class = 'bg-sunny';
 } else {
-    $situacija = 'Nieko nepadarei';
+    $h1 = 'Debesuota';
+    $class = 'bg-cloudy';
 }
-
-$h1 = 'Buitine skaiciuokle';
-$h2 = "Situacija: $situacija";
-$h3 = "Isvada: $miegosi ant sofos";
 ?>
 <html>
+    <head>
+        <style>
+            .content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .bg-img {
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+            }
+            .bg-cloudy {
+                background-image: url("https://icon-library.net/images/cloud-icon-png-transparent/cloud-icon-png-transparent-0.jpg")
+            }
+            .bg-sunny {
+                background-image: url("https://images.vexels.com/media/users/3/145134/isolated/preview/46b65a02ff99e7bb4e84d4d3d627a729-sun-sharp-beams-icon-by-vexels.png");
+            }
+        </style>
+    </head>
     <body>
-        <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
-        <img src="<?php print $img ?>">
+        <div class="content">
+            <div class="bg-img <?php print $class; ?>"></div>
+            <h1><?php print $h1; ?></h1>
+        </div>
     </body>
 </html>
