@@ -1,30 +1,75 @@
 <?php
-$kates = rand(1, 3);
-$sunys = rand(1, 3);
-$pavyko = rand(0, 3);
-$katasuniai = 0;
+$sunny = rand(0,1);
+$rainy = rand(0,1);
 
-for ($z = 0; $z < $kates; $z++) {       // ima kates ir tikrina su sunim
-    for ($x = 0; $x < $sunys; $x++) {   // tikrina suns pajegumus
-        $pavyko = rand(0, 1);           // patikrina ar pavyko
-        if ($pavyko) {                  // jei pavyko, prideda katasuni
-            $katasuniai++;
-            break;                      // nutraukia 8 eilute
-        }
+if ($sunny) {
+    if ($rainy) {
+        $h1 = 'Lietus su pragiedruliais';
+        $class = 'bg-clear-rainy';
+    }
+    else {
+        $h1 = 'Saulėta';
+        $class = 'bg-sunny';
     }
 }
-
-$h1 = 'Katašunių išeiga';
-$h2 = "Dalyvavo $kates katės ir $sunys šunys";
-$h3 = "Katašunių išeiga: $katasuniai";
+    elseif {
+    $clear = 1; } 
+else{
+    $cloudy = 1;
+} 
+if ($cloudy && $rainy) {
+    $h1 = 'Stiprus lietus';
+    $class = 'bg-cloudy-rainy';
+} 
+else {
+    $h1 = 'Debesuota';
+    $class = 'bg-cloudy';
+} 
+if ($clear && !$rainy) {
+    
+} 
+else {
+    
+} 
 ?>
+<html lang="en">
+    <body> 
+        <ul>
+            <li><?php print $li_1; ?></li>
+            <li><?php print $li_2; ?></li>
+            <li><?php print $li_3; ?></li>
+        </ul>
 <html>
     <head>
-        <title>2 ciklas</title>
+        <style>
+            .content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .bg-img {
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+            }
+            .bg-cloudy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-08-128.png")
+            }
+            .bg-sunny {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-01-128.png");
+            }
+            .bg-cloudy-rainy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-11-128.png");
+            }
+            .bg-clear-rainy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-04-128.png");
+            }
+        </style>
     </head>
     <body>
-        <h1><?php echo $h1; ?></h1>
-        <h2><?php echo $h2; ?></h2>
-        <h3><?php echo $h3; ?></h3>
+        <div class="content">
+            <div class="bg-img <?php print $class; ?>"></div>
+            <h1><?php print $h1; ?></h1>
+        </div>
     </body>
-</html>
+</html> 
