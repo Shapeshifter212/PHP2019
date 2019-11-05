@@ -1,38 +1,62 @@
 <?php
-$bool = true;
-$str = '1';
-$flt = 1.23;
-$int = 1;
-​
-if ($bool == $int) {
-    //       if ($bool === $int) {          } else { };
-    $bool_int = $bool === $int ? 'Identiski' : 'Lygus';
-} else {
-    $bool_int = 'Nelygus';
-}
-​
-if ($str == $bool) {
-    $str_bool = $str === $bool ? 'Identiski' : 'Lygus';
-} else {
-    $str_bool = 'Nelygus';
-}
-​
-if ($flt == $str) {
-    $flt_str = $flt === $str ? 'Identiski' : 'Lygus';
-} else {
-    $flt_str = 'Nelygus';
-}
-​
-$li_1 = "Bool (true) ir Integer (1): $bool_int";
-$li_2 = "String (1) ir Boolean (1): $str_bool";
-$li_3 = "Float (1.23) ir string(1): $flt_str";
+$sunny = rand(0,1);
+$rainy = rand(0,1);
+$cloudy = 0;
+$clear = 0;
+
+if ($sunny && !$rainy) {
+    $clear = 1; } 
+else{
+    $cloudy = 1;
+} 
+if ($cloudy && $rainy) {
+    $h1 = 'Stiprus lietus';
+    $class = 'bg-cloudy-rainy';
+} 
+else {
+    $h1 = 'Debesuota';
+    $class = 'bg-cloudy';
+} 
+if ($clear && !$rainy) {
+    $h1 = 'Saulėta';
+    $class = 'bg-sunny';
+} 
+else {
+    $h1 = 'Lietus su pragiedruliais';
+    $class = 'bg-clear-rainy';
+} 
 ?>
-<html lang="en">
-    <body> 
-        <ul>
-            <li><?php print $li_1; ?></li>
-            <li><?php print $li_2; ?></li>
-            <li><?php print $li_3; ?></li>
-        </ul>
+<html>
+    <head>
+        <style>
+            .content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .bg-img {
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+            }
+            .bg-cloudy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-08-128.png")
+            }
+            .bg-sunny {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-01-128.png");
+            }
+            .bg-cloudy-rainy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-11-128.png");
+            }
+            .bg-clear-rainy {
+                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-04-128.png");
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="bg-img <?php print $class; ?>"></div>
+            <h1><?php print $h1; ?></h1>
+        </div>
     </body>
 </html>
