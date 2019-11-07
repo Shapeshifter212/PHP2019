@@ -2,22 +2,28 @@
 
 $array = [
     [
-        'kegliai' => [
-            [true, false, false, true],
-            [false, false, true],
-            [true, false],
-            [true],
-        ],
-        'takelio_kondicija' => true,
+        'kryptis' => 'desinee',
+        'kampas' => '90'
     ],
     [
-        'kegliai' => [
-            [false, false, false, false],
-            [false, false, false],
-            [false, false],
-            [false],
-        ],
-        'takelio_kondicija' => false,
+        'kryptis' => 'kaire',
+        'kampas' => '130'
+    ],
+    [
+        'kryptis' => 'desine',
+        'kampas' => '70'
+    ],
+    [
+        'kryptis' => 'kaire',
+        'kampas' => '1200'
+    ],
+    [
+        'kryptis' => 'desine',
+        'kampas' => '170'
+    ],
+    [
+        'kryptis' => 'desine',
+        'kampas' => '1200'
     ],
 ];
 var_dump($array);
