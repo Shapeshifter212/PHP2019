@@ -2,40 +2,22 @@
 
 $array = [
     [
-        [
-            'type' => 'kiausiniai',
-            'amount' => '3'
+        'kegliai' => [
+            '4th_line' => [true, false, false, true],
+            '3rd_line' => [false, false, true],
+            '2nd_line' => [true, false],
+            '1st_line' => [true],
         ],
-        [
-            'type' => 'grietines',
-            'amount' => '1'
-        ],
-        [
-            'type' => 'jogurtas',
-            'amount' => '2'
-        ],
-        [
-            'type' => 'zuvis',
-            'amount' => '0'
-        ],
+        'takelio_kondicija' => ['patenkinama']
     ],
     [
-        [
-            'type' => 'pienas',
-            'amount' => '1'
+        'kegliai' => [
+            '4th_line' => [false, false, false, false],
+            '3rd_line' => [false, false, false],
+            '2nd_line' => [false, false],
+            '1st_line' => [false],
         ],
-        [
-            'type' => 'kefyras',
-            'amount' => '0'
-        ],
-        [
-            'type' => 'degtine',
-            'amount' => '2'
-        ],
-        [
-            'type' => 'kecupas',
-            'amoint' => '2'
-        ],
+        'takelio_kondicija' => ['xujova']
     ],
 ];
 var_dump($array);
