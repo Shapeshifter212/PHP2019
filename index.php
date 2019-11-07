@@ -5,16 +5,19 @@ $depraciation = 2;
 $i = 0;
 $car_price_used = 0;
 $depr_perc = 0;
+$santaupos = 15000;
 
 for ($i = 1; $i <= $months; $i++) {
     $nuvertejimas = $car_price_new * $depraciation / 100;
-    $car_price_used += $nuvertejimas;
-}
+    $months = $santaupos / $nuvertejimas;
+    $car_price_used = $months * $nuvertejimas;
+}   
+
 $depr_perc = round($car_price_used / $car_price_new * 100);
 
 $h1 = 'Kiek vertas grabas';
 $h2 = "Naujos mašinos kaina: $car_price_new";
-$h3 = "Po $months men, masinos verte bus: $car_price_used eur.";
+$h3 = "Masina galesi nusipirkti po $months men, kai jos verte bus $car_price_used eur.";
 $h4 = "Masina nuvertes $depr_perc proc."
 ?>
 <html>
