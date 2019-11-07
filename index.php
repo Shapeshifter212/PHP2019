@@ -2,7 +2,7 @@
 
 $array = [
     [
-        'kryptis' => 'desinee',
+        'kryptis' => 'desine',
         'kampas' => '90'
     ],
     [
