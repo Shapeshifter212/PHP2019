@@ -1,29 +1,59 @@
 <?php
 
 $array = [
-    [
-        'name' => 'Petras',
-        'surname' => 'Pizdys',
-        'item1' => [
-            'type' => 'telefonas',
-            'condition' => 'prapistas'
+    'lentyna' => [
+        'item' => [
+            [
+                'type' => 'kiausiniai',
+                'amount' => '3'
             ]
+        ],
     ],
     [
-        'name' => 'Tomas',
-        'surname' => 'Ablomas',
-        'item1' => [
-            'type' => 'buljonas',
-            'condition' => 'naudojamas'
+        'item' => [
+            [
+                'type' => 'grietines',
+                'amount' => '1'
             ]
+        ],
     ],
-    [
-        'name' => 'Ana',
-        'surname' => 'Sjitkova',
-        'item1' => [
-            'type' => 'rulonas',
-            'condition' => 'pasibaiges'
-            ]
+    'item' => [
+        [
+            'type' => 'tjogurtas',
+            'amount' => '2'
+        ]
+    ],
+    'item' => [
+        [
+            'type' => 'zuvis',
+            'amount' => '0'
+        ]
     ],
 ];
+    'lentyna' => [
+        'item' => [
+            [
+                'type' => 'pienas',
+                'amount' => '1'
+            ]
+        ],
+        'item' => [
+            [
+                'type' => 'kefyras',
+                'amount' => '0'
+            ]
+        ],
+        'item' => [
+            [
+                'type' => 'degtine',
+                'amount' => '2'
+            ]
+        ],
+        'item' => [
+            [
+                'type' => 'kecupas',
+                'amoint' => '2'
+            ]
+        ],
+    ];
 var_dump($array);
