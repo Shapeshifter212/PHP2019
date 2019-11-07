@@ -3,21 +3,21 @@
 $array = [
     [
         'kegliai' => [
-            '4th_line' => [true, false, false, true],
-            '3rd_line' => [false, false, true],
-            '2nd_line' => [true, false],
-            '1st_line' => [true],
+            [true, false, false, true],
+            [false, false, true],
+            [true, false],
+            [true],
         ],
-        'takelio_kondicija' => ['patenkinama']
+        'takelio_kondicija' => true,
     ],
     [
         'kegliai' => [
-            '4th_line' => [false, false, false, false],
-            '3rd_line' => [false, false, false],
-            '2nd_line' => [false, false],
-            '1st_line' => [false],
+            [false, false, false, false],
+            [false, false, false],
+            [false, false],
+            [false],
         ],
-        'takelio_kondicija' => ['xujova']
+        'takelio_kondicija' => false,
     ],
 ];
 var_dump($array);
