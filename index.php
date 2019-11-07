@@ -15,7 +15,7 @@ $array = [
     ],
     [
         'kryptis' => 'kaire',
-        'kampas' => '1200'
+        'kampas' => '120'
     ],
     [
         'kryptis' => 'desine',
@@ -23,7 +23,7 @@ $array = [
     ],
     [
         'kryptis' => 'desine',
-        'kampas' => '1200'
+        'kampas' => '120'
     ],
 ];
 var_dump($array);
