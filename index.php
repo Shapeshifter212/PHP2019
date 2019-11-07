@@ -2,19 +2,22 @@
 
 $array = [
     [
-'skaicius' => '2',
- 'dydis' => 'dideli',
- 'objektas' => 'kiausianiai',
-],
- [
-'skaicius' => '1',
- 'dydis' => 'mazas',
- 'objektas' => 'baklazanas',
-],
- [
-'skaicius' => '1',
- 'dydis' => 'didelis',
- 'objektas' => 'grietines indelis',
-],
- ];
- var_dump($array);
+        'name' => 'Petras',
+        'surname' => 'Pizdys',
+        'item' => 'telefonas',
+        'condition' => 'prapistas',
+    ],
+    [
+        'name' => 'Tomas',
+        'surname' => 'Ablomas',
+        'item' => 'buljonas',
+        'condition' => 'naudojamas',
+    ],
+    [
+        'name' => 'Ana',
+        'surname' => 'Sjitkova',
+        'item' => 'rulonas',
+        'condition' => 'pasibaiges',
+    ],
+];
+var_dump($array);
