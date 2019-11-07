@@ -4,20 +4,26 @@ $array = [
     [
         'name' => 'Petras',
         'surname' => 'Pizdys',
-        'item' => 'telefonas',
-        'condition' => 'prapistas',
+        'item1' => [
+            'type' => 'telefonas',
+            'condition' => 'prapistas'
+            ]
     ],
     [
         'name' => 'Tomas',
         'surname' => 'Ablomas',
-        'item' => 'buljonas',
-        'condition' => 'naudojamas',
+        'item1' => [
+            'type' => 'buljonas',
+            'condition' => 'naudojamas'
+            ]
     ],
     [
         'name' => 'Ana',
         'surname' => 'Sjitkova',
-        'item' => 'rulonas',
-        'condition' => 'pasibaiges',
+        'item1' => [
+            'type' => 'rulonas',
+            'condition' => 'pasibaiges'
+            ]
     ],
 ];
 var_dump($array);
