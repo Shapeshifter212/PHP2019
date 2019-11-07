@@ -1,75 +1,30 @@
 <?php
-$sunny = rand(0,1);
-$rainy = rand(0,1);
+$months = 24;
+$car_price_new = 30000;
+$depraciation = 2;
+$i = 0;
+$car_price_used = 0;
+$depr_perc = 0;
 
-if ($sunny) {
-    if ($rainy) {
-        $h1 = 'Lietus su pragiedruliais';
-        $class = 'bg-clear-rainy';
-    }
-    else {
-        $h1 = 'Saulėta';
-        $class = 'bg-sunny';
-    }
+for ($i = 1; $i <= $months; $i++) {
+    $nuvertejimas = $car_price_new * $depraciation / 100;
+    $car_price_used += $nuvertejimas;
 }
-    elseif {
-    $clear = 1; } 
-else{
-    $cloudy = 1;
-} 
-if ($cloudy && $rainy) {
-    $h1 = 'Stiprus lietus';
-    $class = 'bg-cloudy-rainy';
-} 
-else {
-    $h1 = 'Debesuota';
-    $class = 'bg-cloudy';
-} 
-if ($clear && !$rainy) {
-    
-} 
-else {
-    
-} 
+$depr_perc = round($car_price_used / $car_price_new * 100);
+
+$h1 = 'Kiek vertas grabas';
+$h2 = "Naujos mašinos kaina: $car_price_new";
+$h3 = "Po $months men, masinos verte bus: $car_price_used eur.";
+$h4 = "Masina nuvertes $depr_perc proc."
 ?>
-<html lang="en">
-    <body> 
-        <ul>
-            <li><?php print $li_1; ?></li>
-            <li><?php print $li_2; ?></li>
-            <li><?php print $li_3; ?></li>
-        </ul>
 <html>
     <head>
-        <style>
-            .content {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-            .bg-img {
-                width: 150px;
-                height: 150px;
-                background-size: cover;
-            }
-            .bg-cloudy {
-                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-08-128.png")
-            }
-            .bg-sunny {
-                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-01-128.png");
-            }
-            .bg-cloudy-rainy {
-                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-11-128.png");
-            }
-            .bg-clear-rainy {
-                background-image: url("https://cdn1.iconfinder.com/data/icons/weather-429/64/weather_icons_color-04-128.png");
-            }
-        </style>
+        <title>Loops</title>
     </head>
     <body>
-        <div class="content">
-            <div class="bg-img <?php print $class; ?>"></div>
-            <h1><?php print $h1; ?></h1>
-        </div>
+        <h1><?php print $h1; ?></h1>
+        <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
+        <h4><?php print $h4; ?></h4>
     </body>
-</html> 
+</html>    
