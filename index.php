@@ -1,4 +1,4 @@
-<?php
+<?php // 1-red 2-green 3-yellow 4-blank
 
 $array = [
     [2, 2, 2, 2, 2, 2, 2, 2],
